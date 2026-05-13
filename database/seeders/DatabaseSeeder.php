@@ -60,8 +60,6 @@ class DatabaseSeeder extends Seeder
 
         $superAdmin->syncRoles(['Super Admin']);
 
-        $this->call(ProjectSeeder::class);
-        $this->call(TaskSeeder::class);
 
 
     }
