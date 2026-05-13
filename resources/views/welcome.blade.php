@@ -20,15 +20,7 @@
             <!-- Heading -->
             <div class="text-center">
                 <p class="mb-3 text-sm uppercase tracking-[0.35em] text-cyan-300">
-                    Laravel Multi-Tenant SaaS App
-                </p>
-
-                <h1 class="text-4xl font-bold text-white">
-                    Welcome to SaaS Platform
-                </h1>
-
-                <p class="mt-4 text-slate-400">
-                    Register your company, access tenant portals, or login as Super Admin.
+                    Laravel Multi-Tenant SaaS Application
                 </p>
             </div>
 
@@ -51,7 +43,7 @@
             <div class="mt-12 rounded-2xl border border-white/10 bg-slate-900/40 p-6">
 
                 <h2 class="mb-5 text-xl font-semibold text-white">
-                    Tenant Login
+                    Company Login
                 </h2>
 
                 <div class="flex flex-col gap-4 sm:flex-row">
@@ -60,7 +52,7 @@
                         class="w-full rounded-xl border border-slate-700 bg-slate-900 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
 
                         <option value="">
-                            Select Tenant
+                            Select Company
                         </option>
                         @foreach (App\Models\Tenant::query()->get() as $tenant)
                             <option value="{{ $tenant->slug }}">
