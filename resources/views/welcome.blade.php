@@ -81,7 +81,7 @@
             let tenantId = document.getElementById('tenantSelect').value;
 
             if (!tenantId) {
-                alert('Please select tenant');
+                alert('Please select Company');
                 return;
             }
 
