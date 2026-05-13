@@ -84,7 +84,7 @@ composer install
 npm install
 ```
 
-### Step 4 — Copy Environment File
+### Step 4 — Copy Environment File(give permission to .env file)
 
 ```bash
 cp .env.example .env
@@ -98,14 +98,39 @@ php artisan key:generate
 
 ---
 
+### Compile Assets 
+
+```bash
+# Development (with hot reload)
+npm run dev
+
+# Production build
+npm run build
+```
+
 ## ⚙️ Environment Configuration
 
 Open `.env` and configure the following sections:
 
+ Set Permissions
+
+```bash
+mkdir -p storage/framework/cache/data
+mkdir -p storage/framework/sessions
+mkdir -p storage/framework/views
+mkdir -p storage/logs
+mkdir -p bootstrap/cache
+
+sudo chown -R www-data:www-data /var/www/SaasApp
+sudo chmod -R 755 /var/www/SaasApp
+sudo chmod -R 775 /var/www/Saasapp/storage
+sudo chmod -R 775 /var/www/SaasApp/bootstrap/cache
+sudo chmod -R 775 storage bootstrap/cache
+
 ### Application
 
 ```env
-APP_NAME="SaaS App"
+APP_NAME="SaasApp"
 APP_ENV=local
 APP_KEY=          # auto-filled by key:generate
 APP_DEBUG=true
@@ -216,15 +241,7 @@ php artisan serve
 
 App will be available at `http://localhost:8000`.
 
-### Compile Assets (if applicable)
 
-```bash
-# Development (with hot reload)
-npm run dev
-
-# Production build
-npm run build
-```
 
 ### Start Queue Worker (required for notifications)
 
