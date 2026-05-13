@@ -7,7 +7,6 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-A multi-tenant SaaS platform for project and task management. Each company gets its own isolated workspace, accessible via a unique slug-based URL (`/api/tenant/{slug}/...`).
 
 ---
 
