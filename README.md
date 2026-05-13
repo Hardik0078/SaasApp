@@ -133,7 +133,7 @@ MAIL_USERNAME=your_mailtrap_username
 MAIL_PASSWORD=your_mailtrap_password
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS="noreply@saasapp.test"
-MAIL_FROM_NAME="SaaS App"
+MAIL_FROM_NAME="SaasApp"
 ```
 
 > 💡 For local development, [Mailtrap](https://mailtrap.io) or [Mailpit](https://github.com/axllent/mailpit) work great.
